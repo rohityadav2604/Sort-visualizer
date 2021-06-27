@@ -44,7 +44,7 @@
 .array-container {
     height: calc(100vh - 80px);
     width: 100%;
-    background-color: aquamarine;
+    background-color:black blue;
     overflow: scroll;
     display: flex;
     align-items: flex-end;
@@ -52,10 +52,10 @@
 }
 
 .array-container div {
-    background-color: burlywood;
+    background-color:burlywood;
     min-height: 10%;
     width: 2%;
-    position: relative;
+     /* position: relative;  */
     top: 5%;
 
 }
