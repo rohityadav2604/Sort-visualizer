@@ -23,7 +23,7 @@ function ShowArray()
         let value = Math.floor(Math.random()*100)+1;
         let valueDiv = document.createElement("div");
         valueDiv.classList.add("valueDiv");
-         valueDiv.style.height = `${value*7}px`;
+         valueDiv.style.height = `${value*5}px`;
         // valueDiv.style.backgroundcolor = "darkblue";
         valueDiv.textContent = value;
         ArrayContainer.append(valueDiv);
@@ -70,17 +70,17 @@ async function SelectionSort(e)
 }
 
 
-async function createSound()
+ function createSound()
 {
     console.log("audio");
     let audio = document.createElement("audio");
     audio.src = "./click.mp3"
     audio.play();
-    await new Promise((res) =>{
-        setTimeout(()=>{
-             res();
-        } , 5000)
-    });
+    // await new Promise((res) =>{
+    //     setTimeout(()=>{
+    //          res();
+    //     } , 5000)
+    // });
 
 }
 
