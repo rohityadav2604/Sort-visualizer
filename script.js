@@ -70,7 +70,19 @@ async function SelectionSort(e)
 }
 
 
+async function createSound()
+{
+    console.log("audio");
+    let audio = document.createElement("audio");
+    audio.src = "./click.mp3"
+    audio.play();
+    await new Promise((res) =>{
+        setTimeout(()=>{
+             res();
+        } , 5000)
+    });
 
+}
 
 async function bubblesort()
 {
@@ -90,7 +102,7 @@ async function bubblesort()
 
              if(Number(arr[j].textContent) > Number(arr[j+1].textContent))
              {
-                 
+                  
                 swap(arr , j+1  ,  j);
                 
                 
@@ -324,7 +336,7 @@ function swap(arr , first  , second)
                 // arr[minidx].style.height = arr[j].style.height;
                 // arr[j].style.height = minvalueheight;
                 // arr[j].textContent = minvalue;
-
+                createSound();
                 let minvalue = arr[first].textContent;
                 let minvalueheight = arr[first].style.height;
                 arr[first].textContent = arr[second].textContent;
